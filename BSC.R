@@ -1,4 +1,5 @@
 bsc <- function (counts, surveyed, order = T, R = 10000) {
+  
   # The function bsc() takes two vectors of equal length as arguments:
   # a vector with counts of languages with a sound changes required for
   # an alternation Ak, and a vector of languages surveyed for each sound change.
