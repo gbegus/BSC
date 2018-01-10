@@ -48,20 +48,20 @@ bsc <- function (counts, surveyed, order = T, R = 10000) {
 bsc2 <- function(bsc.alt1a, bsc.alt2a, order = T, R = 10000){
   
   # The function bsc2() compares the Historical Probabilities 
-  #of two processes with BSC. It takes as an input the output 
-  #of bsc() for the process in question. The function transforms
-  #the counts into a binomial distribution of successes and failures.
-  #It returns R  bootstrap replicates of the difference in Historical
-  #Probability between the two alternations, computed according to 
-  #Begus (2017). Stratified non-parametric bootstrapping is performed 
-  #based on the boot package: the output of bsc2() is an object of class `boot.
-  #The output of bsc2() should be used as an argument of summary.bsc2()
-  #(see summary.bsc2()), which returns the observed Px and 95% BCa CIs 
-  #for the difference. If 95% BCa CIs fall above or below zero, 
-  #it spells out that the difference is significant, 
-  #and that it is not otherwise.  Two optional arguments of bsc()
-  #are order (if True, Historical Probabilities are divided by n!)
-  #and R, which determines the number of bootstrap replicates.
+  # of two processes with BSC. It takes as an input the output 
+  # of bsc() for the process in question. The function transforms
+  # the counts into a binomial distribution of successes and failures.
+  # It returns R  bootstrap replicates of the difference in Historical
+  # Probability between the two alternations, computed according to 
+  # Begus (2017). Stratified non-parametric bootstrapping is performed 
+  # based on the boot package: the output of bsc2() is an object of class `boot.
+  # The output of bsc2() should be used as an argument of summary.bsc2()
+  # (see summary.bsc2()), which returns the observed Px and 95% BCa CIs 
+  # for the difference. If 95% BCa CIs fall above or below zero, 
+  # it spells out that the difference is significant, 
+  # and that it is not otherwise.  Two optional arguments of bsc()
+  # are order (if True, Historical Probabilities are divided by n!)
+  # and R, which determines the number of bootstrap replicates.
   
   library(boot)
   bsc.alt1 <- bsc.alt1a$data
