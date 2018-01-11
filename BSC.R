@@ -45,7 +45,7 @@ bsc <- function (counts, surveyed, order = T, R = 10000) {
 
 
 
-bsc2 <- function(bsc.alt1a, bsc.alt2a, order = T, R = 10000){
+bsc2 <- function(bsc.alt1a, bsc.alt2a, order = T, R = 10000) {
   
   # The function bsc2() compares the Historical Probabilities 
   # of two processes with BSC. It takes as an input the output 
