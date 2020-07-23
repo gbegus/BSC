@@ -61,4 +61,26 @@ The function `plot.bsc()` takes the output of `bsc()` as  input and plots the di
 ```
 plot.bsc(pnd)
 ```
+![Plot](/pndBscPlot.jpeg)
+
+
+### plot.bsc2()
+
+ The function `plot.bsc2()` takes the output of `bsc()` as its input (two alternations) and plots the distribution of bootstrap replicates with the observed Historical Probability of the process (solid line) and 95% BC<sub>a<\sub> CI (dashed line), calculated with the `boot.ci()` function from the *boot* package for each alternation. The plotting is based on the *ggplot2* package (Wickham 2009). An optional argument Alternation allows for the change of the name of the two alternations in the legend. Note that `plot.bsc2()` does not plot bootstrap replicates of the difference between two Historical Probabilities, but rather bootstrap replicates of Historical Probabilities of each of the two alternations. To plot the bootstrap replicates of the difference between two Historical Probabilities, apply `plot.bsc()` to the output  of bsc2().
+ 
+ 
+ 
+```
+ivv.counts <- c(38)
+ivv.surveyed <- c(294)
+
+ivv <- bsc(ivv.counts, ivv.surveyed)
+summary.bsc(ivv)
+
+plot.bsc2(pnv,ivv)
+```
+ 
+ ![Plot2](/pndBscPlot2.jpeg)
+ 
+  
 
