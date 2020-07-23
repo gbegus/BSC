@@ -82,5 +82,4 @@ plot.bsc2(pnv,ivv)
  
  ![Plot2](/pndBscPlot2.jpeg)
  
-  
 
