@@ -1,6 +1,6 @@
 # BSC
 
-Code for Begus, Gasper. 2019. [*Estimating historical probabilities of natural and unnatural processes*](https://ling.auf.net/lingbuzz/004299). Ms, UC Berkeley.
+Code for Beguš, Gašper. 2020. [Estimating historical probabilities of natural and unnatural processes](https://www.cambridge.org/core/journals/phonology/article/estimating-historical-probabilities-of-natural-and-unnatural-processes/CAC83CE585B82836CBC0D3A4BCDF17EB#article). *Phonology* 37(4): 515-549. doi:10.1017/S0952675720000263 
 
 ### bsc()
 
